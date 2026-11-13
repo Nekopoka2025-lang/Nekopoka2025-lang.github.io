@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>My Journal</title>
-    <link>https://Nekopoka2025-lang.github.io/</link>
+    <link>https://kellro.dpdns.org/</link>
     <description>一本手账风格的静态博客，用来记下日常与灵感。</description>
     <language>zh-CN</language>
     <lastBuildDate>Fri, 13 Nov 2026 00:00:00 GMT</lastBuildDate>
-    <atom:link href="https://Nekopoka2025-lang.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="https://kellro.dpdns.org/feed.xml" rel="self" type="application/rss+xml"/>
     <managingEditor>Kellro</managingEditor>
     <item>
       <title>一篇带代码和图片的测试文章</title>
-      <link>https://Nekopoka2025-lang.github.io/posts/code-and-images/</link>
-      <guid>https://Nekopoka2025-lang.github.io/posts/code-and-images/</guid>
+      <link>https://kellro.dpdns.org/posts/code-and-images/</link>
+      <guid>https://kellro.dpdns.org/posts/code-and-images/</guid>
       <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
       <description>用来确认代码块、行内代码、图片和引用在这张“白纸贴纸”上是否好读。</description>
       <category>测试</category>
@@ -19,8 +19,8 @@
     </item>
     <item>
       <title>关于这个博客的设计</title>
-      <link>https://Nekopoka2025-lang.github.io/posts/about-the-design/</link>
-      <guid>https://Nekopoka2025-lang.github.io/posts/about-the-design/</guid>
+      <link>https://kellro.dpdns.org/posts/about-the-design/</link>
+      <guid>https://kellro.dpdns.org/posts/about-the-design/</guid>
       <pubDate>Sun, 08 Nov 2026 00:00:00 GMT</pubDate>
       <description>横线笔记本、树叶光影、硬阴影贴纸和会放大的小黑点——这篇拆开手账风格是怎么叠出来的。</description>
       <category>设计</category>
@@ -28,8 +28,8 @@
     </item>
     <item>
       <title>你好，世界</title>
-      <link>https://Nekopoka2025-lang.github.io/posts/hello-world/</link>
-      <guid>https://Nekopoka2025-lang.github.io/posts/hello-world/</guid>
+      <link>https://kellro.dpdns.org/posts/hello-world/</link>
+      <guid>https://kellro.dpdns.org/posts/hello-world/</guid>
       <pubDate>Sun, 01 Nov 2026 00:00:00 GMT</pubDate>
       <description>把第一页写在一本新手账的开头。这是 My Journal 的第一篇，也是一声很轻的你好。</description>
       <category>随笔</category>

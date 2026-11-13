@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://Nekopoka2025-lang.github.io/sitemap.xml
+Sitemap: https://kellro.dpdns.org/sitemap.xml

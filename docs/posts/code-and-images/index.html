@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>一篇带代码和图片的测试文章 · My Journal</title>
+  <meta name="description" content="用来确认代码块、行内代码、图片和引用在这张“白纸贴纸”上是否好读。">
+  <meta name="author" content="Kellro">
+  <meta name="generator" content="My Journal static builder">
+  <link rel="canonical" href="/posts/code-and-images/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="alternate" type="application/rss+xml" title="My Journal" href="/feed.xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Patrick+Hand&family=ZCOOL+KuaiLe&family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/style.css">
+  
+</head>
+<body class="page-post">
+  <a class="skip" href="#main">跳到正文</a>
+  <div class="leaves" aria-hidden="true"></div>
+  <div id="cur" hidden></div>
+  <header id="hdr" class="sticker always">
+    <a class="logo" href="/">My Journal</a>
+    <nav>
+      <a href="/posts/">文章</a>
+      <a href="/tags/">标签</a>
+      <a href="/about/">关于</a>
+    </nav>
+  </header>
+  <main id="main">
+    
+  <div class="article-wrap">
+    <article class="article sticker">
+      <a class="back" href="/posts/">← 返回文章列表</a>
+      <h1>一篇带代码和图片的测试文章</h1>
+      <p class="lead-meta">
+        <time datetime="2026-11-13">2026年11月13日</time>
+      </p>
+      <div class="tags" style="margin:-8px 0 28px"><a class="tag" href="/tags/%E6%B5%8B%E8%AF%95/">测试</a><a class="tag" href="/tags/%E4%BB%A3%E7%A0%81/">代码</a></div>
+      <div class="prose">
+        <p>这是一篇故意写得很“完整”的测试文，用来检查排版：标题层级、列表、引用、图片，还有深色代码块。</p>
+<h2>一张占位图</h2>
+<p>下面这张图是站点里的 SVG 插画，被放成拍立得的样子——白边、硬阴影、轻微倾斜。</p>
+<p><img src="/assets/img/sunset.svg" alt="黄昏色块插画"></p>
+<p>再来一张更冷静的纸纹理色块：</p>
+<p><img src="/assets/img/paper.svg" alt="纸面色块"></p>
+<h2>代码好不好读？</h2>
+<p>行内代码长这样：把构建命令写成 <code>npm run build</code>，把文章放进 <code>posts/</code> 目录。</p>
+<p>一段用来计算贴纸旋转角度的小函数：</p>
+<pre><code class="language-js">function rotation(slug) {
+  let h = 0;
+  for (const ch of slug) {
+    h = (h * 31 + ch.charCodeAt(0)) &gt;&gt;&gt; 0;
+  }
+  return (h % 31) - 15;
+}
+
+console.log(rotation(&quot;hello-world&quot;));
+</code></pre>
+<p>以及一小段样式，正好对照站点里的贴纸规则：</p>
+<pre><code class="language-css">.sticker {
+  background: #fff;
+  padding: 10px 22px;
+  border-radius: 18px;
+  box-shadow: 3px 4px 0 #0003;
+}
+</code></pre>
+<h2>清单与引用</h2>
+<p>构建一篇新文章大约只要三步：</p>
+<ol>
+<li>在 <code>posts/</code> 里新建 Markdown，写好 frontmatter。</li>
+<li>运行 <code>npm run build</code>。</li>
+<li>打开 <code>docs/</code> 里生成的页面看一眼。</li>
+</ol>
+<blockquote>
+<p>测试通过的标准很朴素：代码能复制，图片能显示，手机上也能把这张纸读完。</p>
+</blockquote>
+<p>若你正在写下一篇，记得在 <code>site.config.json</code> 里先确认站点名和作者。然后，去<a href="/posts/">所有文章</a>看看筛选和排序是否也工作正常。</p>
+
+      </div>
+      <nav class="post-nav">
+        <a class="prev" href="/posts/about-the-design/">← 关于这个博客的设计</a>
+        
+      </nav>
+    </article>
+  </div>
+  </main>
+  <footer>
+    <p class="sticker">© 2026 Kellro · My Journal</p>
+  </footer>
+  <script src="/assets/app.js"></script>
+</body>
+</html>

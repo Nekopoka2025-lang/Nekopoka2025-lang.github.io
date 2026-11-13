@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>关于这个博客的设计 · My Journal</title>
+  <meta name="description" content="横线笔记本、树叶光影、硬阴影贴纸和会放大的小黑点——这篇拆开手账风格是怎么叠出来的。">
+  <meta name="author" content="Kellro">
+  <meta name="generator" content="My Journal static builder">
+  <link rel="canonical" href="/posts/about-the-design/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="alternate" type="application/rss+xml" title="My Journal" href="/feed.xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Patrick+Hand&family=ZCOOL+KuaiLe&family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/style.css">
+  
+</head>
+<body class="page-post">
+  <a class="skip" href="#main">跳到正文</a>
+  <div class="leaves" aria-hidden="true"></div>
+  <div id="cur" hidden></div>
+  <header id="hdr" class="sticker always">
+    <a class="logo" href="/">My Journal</a>
+    <nav>
+      <a href="/posts/">文章</a>
+      <a href="/tags/">标签</a>
+      <a href="/about/">关于</a>
+    </nav>
+  </header>
+  <main id="main">
+    
+  <div class="article-wrap">
+    <article class="article sticker">
+      <a class="back" href="/posts/">← 返回文章列表</a>
+      <h1>关于这个博客的设计</h1>
+      <p class="lead-meta">
+        <time datetime="2026-11-08">2026年11月8日</time>
+      </p>
+      <div class="tags" style="margin:-8px 0 28px"><a class="tag" href="/tags/%E8%AE%BE%E8%AE%A1/">设计</a><a class="tag" href="/tags/%E6%89%8B%E8%B4%A6/">手账</a></div>
+      <div class="prose">
+        <p>My Journal 的外观几乎都来自同一套视觉语言：把网页当成一本摊在桌上的手账，而不是一块发光的屏幕。</p>
+<h2>纸与光</h2>
+<p>页面背景不是纯白，而是浅灰纸色叠着 32 像素一行的横线。再在最上层铺一层模糊的径向渐变，用 <code>mix-blend-mode: multiply</code> 乘在纸上，配一段缓慢的 <code>sway</code> 动画，看起来像窗外树叶投下的影子。</p>
+<p>如果系统开启了“减少动态效果”，这些摆动会自动停住。</p>
+<h2>贴纸怎么“剪”出来</h2>
+<p>所谓贴纸，其实很简单：</p>
+<ol>
+<li>白底、大圆角，像模切出来的边。</li>
+<li>一道不模糊的硬偏移阴影：<code>box-shadow: 3px 4px 0 #0003</code>。</li>
+<li>标题用 Caveat 与站酷快乐体，正文用 Patrick Hand 与马善政楷书，让中英文都带着手写感。</li>
+</ol>
+<p>散落的照片堆则给每张卡片一个 -15° 到 15° 的旋转。悬停时用带回弹的 <code>cubic-bezier</code> 把它摆正、放大，并提到最前。像你伸手把一张拍立得扶平。</p>
+<h2>光标与链接</h2>
+<p>在精确指针设备上，系统光标会被藏起来，换成一颗跟着鼠标走的小黑点；悬停到链接、按钮或卡片时它会变大、变半透明。触摸设备上则完全不用这套，避免挡住手指。</p>
+<p>链接本身有两层反馈：底部伸出一条下划线，同时轻微左右摇一下（wiggle）。这是整站里最“手绘”的小动作。</p>
+<h2>为什么坚持静态</h2>
+<p>没有框架，没有运行时数据库。Markdown 在构建时变成 HTML，GitHub Pages 可以直接端出来。这样的站点加载很快，也更容易被自己读懂、改掉。</p>
+<p>设计不是装饰，是让阅读这件事变得想被停留。</p>
+
+      </div>
+      <nav class="post-nav">
+        <a class="prev" href="/posts/hello-world/">← 你好，世界</a>
+        <a class="next" href="/posts/code-and-images/">一篇带代码和图片的测试文章 →</a>
+      </nav>
+    </article>
+  </div>
+  </main>
+  <footer>
+    <p class="sticker">© 2026 Kellro · My Journal</p>
+  </footer>
+  <script src="/assets/app.js"></script>
+</body>
+</html>

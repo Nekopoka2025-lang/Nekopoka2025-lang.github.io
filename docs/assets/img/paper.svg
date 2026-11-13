@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-label="纸面色块">
+  <rect width="800" height="500" fill="#f3f3f1"/>
+  <g stroke="#d0d0cc" stroke-width="2">
+    <path d="M0 80 H800"/>
+    <path d="M0 130 H800"/>
+    <path d="M0 180 H800"/>
+    <path d="M0 230 H800"/>
+    <path d="M0 280 H800"/>
+    <path d="M0 330 H800"/>
+    <path d="M0 380 H800"/>
+    <path d="M0 430 H800"/>
+  </g>
+  <rect x="70" y="40" width="4" height="420" fill="#c9c9c4"/>
+  <circle cx="400" cy="230" r="72" fill="#111" opacity=".08"/>
+  <rect x="250" y="160" width="300" height="180" rx="28" fill="#fff" stroke="#111" stroke-width="3"/>
+  <text x="400" y="265" text-anchor="middle" font-family="Georgia, serif" font-size="48" fill="#111">note</text>
+</svg>

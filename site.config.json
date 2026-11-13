@@ -1,0 +1,8 @@
+{
+  "name": "My Journal",
+  "author": "Kellro",
+  "description": "一本手账风格的静态博客，用来记下日常与灵感。",
+  "baseUrl": "/",
+  "siteUrl": "",
+  "lang": "zh-CN"
+}

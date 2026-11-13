@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>文章 · My Journal</title>
+  <meta name="description" content="My Journal 的全部文章">
+  <meta name="author" content="Kellro">
+  <meta name="generator" content="My Journal static builder">
+  <link rel="canonical" href="/posts/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="alternate" type="application/rss+xml" title="My Journal" href="/feed.xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Patrick+Hand&family=ZCOOL+KuaiLe&family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/style.css">
+  
+</head>
+<body class="page-posts">
+  <a class="skip" href="#main">跳到正文</a>
+  <div class="leaves" aria-hidden="true"></div>
+  <div id="cur" hidden></div>
+  <header id="hdr" class="sticker always">
+    <a class="logo" href="/">My Journal</a>
+    <nav>
+      <a href="/posts/">文章</a>
+      <a href="/tags/">标签</a>
+      <a href="/about/">关于</a>
+    </nav>
+  </header>
+  <main id="main">
+    
+  <section id="posts-app" class="wrap" data-active-tag="">
+    <h1 class="page-title sticker">全部文章</h1>
+    <div class="bar">
+      <label class="search">🔍 <input id="q" type="search" placeholder="搜索标题、标签或摘要..." autocomplete="off"></label>
+      <div class="toggle" role="group" aria-label="排序">
+        <button type="button" class="on" data-s="new" aria-pressed="true">newest</button>
+        <button type="button" data-s="old" aria-pressed="false">oldest</button>
+      </div>
+    </div>
+    <div class="chip-row" aria-label="标签筛选">
+      <button type="button" class="chip" data-tag="测试" aria-pressed="false">测试 <small>1</small></button><button type="button" class="chip" data-tag="代码" aria-pressed="false">代码 <small>1</small></button><button type="button" class="chip" data-tag="开场" aria-pressed="false">开场 <small>1</small></button><button type="button" class="chip" data-tag="设计" aria-pressed="false">设计 <small>1</small></button><button type="button" class="chip" data-tag="手账" aria-pressed="false">手账 <small>1</small></button><button type="button" class="chip" data-tag="随笔" aria-pressed="false">随笔 <small>1</small></button>
+    </div>
+    <div id="info" aria-live="polite"></div>
+    <div class="grid" id="g"></div>
+    <p class="empty" id="empty" hidden>没有找到匹配的页。</p>
+    <script type="application/json" id="posts-data">[{"title":"一篇带代码和图片的测试文章","date":"2026-11-13","dateLabel":"2026年11月13日","tags":["测试","代码"],"excerpt":"用来确认代码块、行内代码、图片和引用在这张“白纸贴纸”上是否好读。","url":"/posts/code-and-images/","cover":"linear-gradient(135deg, hsl(113 12% 72%), hsl(153 10% 38%))"},{"title":"关于这个博客的设计","date":"2026-11-08","dateLabel":"2026年11月8日","tags":["设计","手账"],"excerpt":"横线笔记本、树叶光影、硬阴影贴纸和会放大的小黑点——这篇拆开手账风格是怎么叠出来的。","url":"/posts/about-the-design/","cover":"linear-gradient(135deg, hsl(61 12% 72%), hsl(101 10% 38%))"},{"title":"你好，世界","date":"2026-11-01","dateLabel":"2026年11月1日","tags":["随笔","开场"],"excerpt":"把第一页写在一本新手账的开头。这是 My Journal 的第一篇，也是一声很轻的你好。","url":"/posts/hello-world/","cover":"linear-gradient(135deg, hsl(246 12% 72%), hsl(286 10% 38%))"}]</script>
+  </section>
+  </main>
+  <footer>
+    <p class="sticker">© 2026 Kellro · My Journal</p>
+  </footer>
+  <script src="/assets/app.js"></script>
+</body>
+</html>

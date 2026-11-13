@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-label="黄昏色块">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c5c5c0"/>
+      <stop offset="55%" stop-color="#8a8a86"/>
+      <stop offset="100%" stop-color="#2e2e2c"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#sky)"/>
+  <circle cx="560" cy="160" r="54" fill="#f3f3f1"/>
+  <rect x="0" y="340" width="800" height="160" fill="#1c1c1b"/>
+  <rect x="80" y="280" width="90" height="160" fill="#111"/>
+  <rect x="200" y="240" width="70" height="200" fill="#2a2a28"/>
+  <rect x="290" y="300" width="120" height="140" fill="#111"/>
+  <path d="M0 360 Q 200 300 400 350 T 800 330 L 800 500 L 0 500 Z" fill="#111" opacity=".85"/>
+</svg>
